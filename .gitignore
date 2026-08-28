@@ -1,0 +1,8 @@
+auth.json
+models-store.json
+bin
+npm
+pi-cache-optimizer-stats.d
+sessions
+
+.env

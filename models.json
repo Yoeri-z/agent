@@ -1,0 +1,22 @@
+{
+  "providers": {
+    "opencode-go": {
+      "compat": {
+        "supportsLongCacheRetention": true,
+        "sendSessionAffinityHeaders": true
+      },
+      "modelOverrides": {
+        "deepseek-v4-flash": {
+          "samplingParams": {
+            "temperature": 0.2
+          }
+        },
+        "deepseek-v4-pro": {
+          "samplingParams": {
+            "temperature": 0.6
+          }
+        }
+      }
+    }
+  }
+}
