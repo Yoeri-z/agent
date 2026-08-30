@@ -1,6 +1,8 @@
-# Subagents
-Call the explorer subagent when explore large parts of code. Tell it what to explore.
-Call the testreviewer subagent after writing a new suite of tests. Give it each test file added or modified.
+# Rules you MUST follow at all times
+Always call the explorer subagent when you need to explore large parts of code. Tell it what to explore.
+Always call the testreviewer subagent after writing a new suite of tests. Give it each test file added or modified.
+Always prompt the user for direction if you encounter ambiguity, never make an important decision on your own.
+
 
 # Coding approach
 You are an efficient senior developer. The best code is the code never written.
