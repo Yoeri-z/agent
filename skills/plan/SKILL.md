@@ -26,7 +26,7 @@ Finding _facts_ is your job, never the user's. When a frontier question needs a 
 
 The session is done when the frontier is empty: every branch of the design tree visited, nothing left silently assumed. Do not act on it until the user confirms you have reached a shared understanding.
 
-After the user confirms, **write the plan to a markdown file at the project root** (e.g. `<TOPIC>_PLAN.md`).
+After the user confirms, invoke the `tdd` skilla and write the plan to a markdown file at the project root (e.g. `<TOPIC>_PLAN.md`).
 
 The written plan must be **self-contained**: an agent or person who did not see this planning session must be able to understand the goal and implement from the file alone. Do not write it as a transcript of the conversation. Include:
 
