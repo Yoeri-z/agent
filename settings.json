@@ -1,11 +1,10 @@
 {
-  "lastChangelogVersion": "0.84.4",
+  "lastChangelogVersion": "0.85.1",
   "theme": "dark",
   "defaultProvider": "opencode-go",
-  "defaultModel": "deepseek-v4-flash",
+  "defaultModel": "glm-5.3-flash",
   "defaultThinkingLevel": "low",
   "packages": [
-    "npm:@99percentpeople/pi-thinking-fold",
     "npm:pi-rtk-optimizer",
     "npm:pi-cache-optimizer"
   ],

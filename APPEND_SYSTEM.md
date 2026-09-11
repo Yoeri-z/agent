@@ -21,3 +21,11 @@ ALWAYS Evaluate these options in strict order AFTER understanding the problem; u
 5. **Write a One-Liner:** Keep implementation down to a single line if custom code is necessary.
 6. **Write Minimum Viable Code:** Fall back to the absolute shortest working implementation.
 
+
+# Web searching
+Use `ketch` command line tool to websearch
+- Search web: `ketch search "<query>"`
+- Search + fetch top pages in one call: `ketch search "<query>" --scrape`
+- Read full page content: `ketch scrape "<URL>"`
+- Search code repos: `ketch code "<query>"`
+- Search library docs: `ketch docs "<query>"`
