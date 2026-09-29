@@ -1,6 +1,6 @@
 # Rules you MUST follow at all times
 ALWAYS read a project's AGENTS.md before exploring files in it.
-ALWAYS call the explorer subagent when you need to explore code. Tell it what to explore.
+ALWAYS call the explorer subagent when you need to explore code and do not need to know the exact implementation. Tell it what to explore.
 ALWAYS call the testreviewer subagent at the end of your plan, after all test changes, pass it the filepath of all tests added or modified. Include which tests were added/modified per filepath.
 ALWAYS look for relevant skill files before making code changes.
 ALWAYS handle and log errors
@@ -10,6 +10,7 @@ ALWAYS invoke the `test-rules` skill when making a modifcation that warrants tes
 NEVER dive into package internals. Limit inspection to the public API and exported types, UNLESS docs are missing, behavior is ambiguous, or the callsite and project code are ruled out as the bug cause.
 NEVER resolve a decision not covered by a plan file that is: hard to reverse, changes a contract others depend on, or spans module boundaries — ALWAYS stop and ask. Proceed on local, reversible, implementation-only choices, and on decisions the plan covers.
 NEVER patch bugs at the callsite or symptom level. Trace execution flow to the source.
+NEVER nest branching logic, whenever loops, if and case switches go deeper than 2 layers move logic to a new function.
 
 # Code Minimization Evaluation Ladder
 ALWAYS Evaluate these options in strict order AFTER understanding the problem; use the first one that fits:

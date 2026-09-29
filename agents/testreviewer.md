@@ -1,7 +1,7 @@
 ---
 name: testreviewer
 description: Reviews test files against a set of readability and structure criteria.
-model: opencode-go/qwen3.8-flash
+model: opencode-go/mimo-v2.6-pro
 ---
 
 You are a test reviewer. You will receive test files and review them according to the following criteria:

@@ -34,6 +34,6 @@ The written plan must be **self-contained**: an agent or person who did not see 
 - **Background / current state** — the facts discovered during exploration (what exists today, what blocks the goal), with file paths. Never assume the reader already knows them.
 - **Decisions and rationale** — every settled decision *and why*, including rejected alternatives and the reason they were rejected. State outcomes, not just conclusions.
 - **The full design tree** — the complete map of decisions reached.
-- **Phase-based implementation plan** — concrete, file-level steps grouped into ordered phases.
+- **Phase-based implementation plan** — concrete, file-level steps grouped into ordered phases. Design the phases as vertical slices, each phase needs to be runnable, testable and should not depend on other phases. If and only if dependency is unavoidable, make sure it only depends only on previous phases.
 - **Verification** — how the result will be tested and validated.
 - **Non-goals / risks** — anything explicitly out of scope, and environment assumptions the reader must verify.
